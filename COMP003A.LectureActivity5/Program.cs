@@ -80,3 +80,52 @@ namespace COMP003A.LectureActivity5
         /// (different parameters)
         /// </summary>
         /// <param name="inputName">String input</param>
+        static void HelloWorld(string inputName)
+        {
+            Console.WriteLine($"Hello, {inputName}");
+        }
+
+        /// <summary>
+        /// Method overloading with multiple parameters but no return value
+        /// </summary>
+        /// <param name="inputName">String input</param>
+        /// <param name="inputAge">Integer input</param>
+        static void HelloWorld(string inputName, int inputAge)
+        {
+            Console.WriteLine($"Hello, {inputName}, age {inputAge}");
+            // you can add more code here
+        }
+
+        /// <summary>
+        /// Method for adding two numeric variables
+        /// </summary>
+        /// <param name="num1">Decimal input</param>
+        /// <param name="num2">Decimal input</param>
+        /// <returns>Sum of two decimal inputs</returns>
+        static decimal Add(decimal num1, decimal num2)
+        {
+            // you can add more code here before the return statement
+            return num1 + num2;
+
+        }
+
+        /// <summary>
+        /// Method for subtracting two numeric variables
+        /// </summary>
+        /// <param name="num1">Decimal input</param>
+        /// <param name="num2">Decimal input</param>
+        /// <returns>Difference of two decimal inputs</returns>
+        static decimal Subtract(decimal num1, decimal num2)
+        {
+            return num1 - num2;
+        }
+        /// <summary>
+        /// Method for multiplying two numeric variables
+        /// </summary>
+        /// <param name="num1">Decimal input</param>
+        /// <param name="num2">Decimal input</param>
+        /// <returns>Difference of two decimal inputs</returns>
+        static decimal Subtract(decimal num1, decimal num2)
+        {
+            return num1 - num2;
+        }

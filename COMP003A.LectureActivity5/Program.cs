@@ -16,7 +16,7 @@ namespace COMP003A.LectureActivity5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("".PadRight(50,'*'));
+            Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("Methods & XML Comments");
             Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("/n");
@@ -47,21 +47,36 @@ namespace COMP003A.LectureActivity5
             // methods can call other methods too
             // below is an example of a method calling itself, also known as recursion
             Console.WriteLine("\n");
+            Inception("This is inception level ", 5);
+        }   //Main()  close 
 
+       /* XML comments are prefixed with htree forward slashes '///'
+        * if you type if you type '///' on top of a class or method,
+        * Visual Studio will populate the structure for you
+        * otherwise, you would have to use the following opening AND closing tags
+         (similar to most html elements)
+        * <summary></summary> used to describe a type member
+        * <param name="nameOfTheParameter"></param> used for describing one or more 
+        * parameters in the method signature
+        * *<returns></returns> used to describe the return value
+        * *
+        * *there are other tags in 
+        * https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags
+         */
 
-
-
-
-
-
+        // NOTE: Mthod definitions are programmed inside the class {} code block,
+        // not inside Main () {}
+        /// <summary>
+        /// Method without parameteres and return value
+        /// </summary>
+        static void HelloWorld()
+        {
+            Console.WriteLine("Hello World!");
         }
 
-
-
-
-
-
-
-    }
-
-}
+        ///<summary>
+        /// Method overloading with one parameter but no return value
+        /// Method overloading => same method name but different signature
+        /// (different parameters)
+        /// </summary>
+        /// <param name="inputName">String input</param>

@@ -38,7 +38,15 @@ namespace COMP003A.LectureActivity5
             decimal sum = Add(inputNumber1, inputNumber2);
             Console.WriteLine($"Summation: {sum}"); // output the value of sum to console
 
+            // if you don't plan on using a variable, you can simplify the method call ike the lines below
+            Console.WriteLine($"Subtraction: {Subtract(inputNumber1, inputNumber2)}");
+            Console.WriteLine($"Multiplication: {Multiply(inputNumber1, inputNumber2)}");
+            Console.WriteLine($"Division: {Divide(inputNumber1, inputNumber2)}");
+            Console.WriteLine($"Remainder: {Remainder(inputNumber1, inputNumber2)}");
 
+            // methods can call other methods too
+            // below is an example of a method calling itself, also known as recursion
+            Console.WriteLine("\n");
 
 
 
